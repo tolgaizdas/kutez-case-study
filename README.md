@@ -16,7 +16,7 @@ The price of each product is calculated using the formula:
 ```
 Price = (popularityScore + 1) * weight * goldPrice
 ```
-The `goldPrice` is retrieved from a real-time data source via [Live Metal Prices API](https://rapidapi.com/belchiorarkad-FqvHs2EDOtP/api/live-metal-prices-api). The API provides the current gold price in USD per gram.
+The `goldPrice` is retrieved from a real-time data source via [Live Metal Prices API](https://rapidapi.com/not-null-solutions1-not-null-solutions-default/api/live-metal-prices). The API provides the current gold price in USD per gram.
 
 ### Frontend Features
 - The frontend displays a list of products using a carousel layout.
