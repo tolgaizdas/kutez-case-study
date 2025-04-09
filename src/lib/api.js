@@ -28,12 +28,11 @@ export async function fetchProducts(filters = {}) {
 
 export async function fetchGoldPrice() {
   try {
-    /*
     const url = 'https://live-metal-prices.p.rapidapi.com/v1/latest/XAU/USD/GRAM';
     const options = {
       method: 'GET',
       headers: {
-        'x-rapidapi-key': '',
+        'x-rapidapi-key': process.env.X_RAPIDAPI_KEY,
         'x-rapidapi-host': 'live-metal-prices.p.rapidapi.com'
       }
     };
@@ -44,10 +43,7 @@ export async function fetchGoldPrice() {
     }
     
     const data = await response.json();
-    console.log(data)
     return data.rates.XAU;
-    */
-    return 100; // TODO: Temporary hardcoded value for testing
   } catch (err) {
     console.error("Error fetching gold price:", err.message);
     return null;
