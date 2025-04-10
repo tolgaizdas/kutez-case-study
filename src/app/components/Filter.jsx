@@ -10,7 +10,7 @@ const Filter = ({ applyFilter }) => {
 
   return (
     <form onSubmit={handleFilter} className="mx-4 md:mx-16 my-8">
-      <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
+      <div className="flex flex-col md:flex-row justify-center gap-4 mb-4">
         <input
           type="number"
           name="minPrice"
