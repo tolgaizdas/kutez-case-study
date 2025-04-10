@@ -9,8 +9,8 @@ export async function GET(request) {
   const minPrice = parseFloat(searchParams.get("minPrice")) || 0;
   const maxPrice = parseFloat(searchParams.get("maxPrice")) || Infinity;
   const minPopularity = parseFloat(searchParams.get("minPopularity")) || 0;
-
-  const goldPrice = await fetchGoldPrice();
+  const goldPrice =
+    parseFloat(searchParams.get("goldPrice")) || (await fetchGoldPrice());
 
   const filteredProducts = products
     .map((product) => {

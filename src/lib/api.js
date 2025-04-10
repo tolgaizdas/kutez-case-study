@@ -1,10 +1,11 @@
 export async function fetchProducts(filters = {}) {
   try {
-    let url = "/api/products";
+    let url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/products`;
 
     if (Object.keys(filters).length > 0) {
       const params = new URLSearchParams();
 
+      if (filters.goldPrice) params.append("goldPrice", filters.goldPrice);
       if (filters.minPrice) params.append("minPrice", filters.minPrice);
       if (filters.maxPrice) params.append("maxPrice", filters.maxPrice);
       if (filters.minPopularity)
@@ -28,22 +29,15 @@ export async function fetchProducts(filters = {}) {
 
 export async function fetchGoldPrice() {
   try {
-    const url = 'https://live-metal-prices.p.rapidapi.com/v1/latest/XAU/USD/GRAM';
-    const options = {
-      method: 'GET',
-      headers: {
-        'x-rapidapi-key': process.env.X_RAPIDAPI_KEY,
-        'x-rapidapi-host': 'live-metal-prices.p.rapidapi.com'
-      }
-    };
-    
-    const response = await fetch(url, options);
+    const url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/gold-price`;
+
+    const response = await fetch(url);
     if (!response.ok) {
-      throw new Error('Failed to fetch gold price');
+      throw new Error("Failed to fetch gold price");
     }
-    
+
     const data = await response.json();
-    return data.rates.XAU;
+    return data.goldPrice;
   } catch (err) {
     console.error("Error fetching gold price:", err.message);
     return null;
