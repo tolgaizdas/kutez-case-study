@@ -52,7 +52,7 @@ const PopularityStars = ({ score }) => {
   return (
     <div className="inline-flex">
       {stars}{" "}
-      <span className="avenir-book text-[14px] ml-2">{starCount}/5</span>
+      <span className="avenir-book text-[14px] ml-2">{starCount.toFixed(1)}/5</span>
     </div>
   );
 };
