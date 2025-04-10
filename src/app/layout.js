@@ -12,8 +12,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kutez Products",
-  description: "A product listing application showcasing various products.",
+  title: "Kutez Case Study",
+  description: "A case study for Kutez",
+  icons: {
+    icon: "https://www.kutez.com/icon.svg?2f18bd94f58ef4e3",
+    shortcut: "https://www.kutez.com/icon.svg?2f18bd94f58ef4e3",
+  },
 };
 
 export default function RootLayout({ children }) {
