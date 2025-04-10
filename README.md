@@ -30,7 +30,7 @@ The API supports filtering products based on:
 
 ## Live Demo
 
-A live demo of the application is available at https://kutez-assignment.vercel.app.
+A live demo of the application is available at https://kutez-case-study.vercel.app.
 
 ## Installation
 
@@ -41,8 +41,8 @@ A live demo of the application is available at https://kutez-assignment.vercel.a
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/tolgaizdas/kutez-assignment
-   cd kutez-assignment
+   git clone https://github.com/tolgaizdas/kutez-case-study
+   cd kutez-case-study
    ```
 
 2. Install the dependencies:
