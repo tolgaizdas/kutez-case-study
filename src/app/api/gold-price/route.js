@@ -18,5 +18,5 @@ export async function GET(request) {
     );
   }
   const data = await response.json();
-  return NextResponse.json({ goldPrice: data["gram-gold"].usd });
+  return NextResponse.json({ goldPrice: Number(data["gram-gold"].usd.toFixed(2)) });
 }
