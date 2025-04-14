@@ -46,6 +46,7 @@ A live demo of the application is available at https://kutez-case-study.vercel.a
    ```
 
 2. Set up the environment variables:
+
    Create a `.env` file in the root directory and add the following variables:
    ```
    COINGECKO_API_KEY=your_coingecko_api_key
@@ -53,7 +54,7 @@ A live demo of the application is available at https://kutez-case-study.vercel.a
    ```
    Replace `your_coingecko_api_key` with your actual CoinGecko API key. You can obtain an API key by signing up at [CoinGecko](https://www.coingecko.com/en/api).
 
-3. Install the dependencies:
+4. Install the dependencies:
    ```bash
    npm install
    ```
