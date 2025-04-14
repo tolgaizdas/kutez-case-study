@@ -38,14 +38,6 @@ A live demo of the application is available at https://kutez-case-study.vercel.a
 - Node.js (version 14 or later)
 - npm (Node Package Manager)
 
-### Environment Variables
-To run the application, you need to set up environment variables. Create a `.env` file in the root directory and add the following variables:
-```
-COINGECKO_API_KEY=your_coingecko_api_key
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-```
-Replace `your_coingecko_api_key` with your actual CoinGecko API key. You can obtain an API key by signing up at [CoinGecko](https://www.coingecko.com/en/api).
-
 ### Installation
 1. Clone the repository:
    ```bash
@@ -53,7 +45,15 @@ Replace `your_coingecko_api_key` with your actual CoinGecko API key. You can obt
    cd kutez-case-study
    ```
 
-2. Install the dependencies:
+2. Set up the environment variables:
+   Create a `.env` file in the root directory and add the following variables:
+   ```
+   COINGECKO_API_KEY=your_coingecko_api_key
+   NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   ```
+   Replace `your_coingecko_api_key` with your actual CoinGecko API key. You can obtain an API key by signing up at [CoinGecko](https://www.coingecko.com/en/api).
+
+3. Install the dependencies:
    ```bash
    npm install
    ```
